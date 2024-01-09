@@ -44,7 +44,6 @@ function M:focusChanged()
       focused,
       function (window, name, event)
          if (name == "Raycast") then return end
-         print(name)
          self:clearOutline()
          self:outlineWindow(window)
          self:blinkWindow(window)
