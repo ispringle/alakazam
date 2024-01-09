@@ -1,0 +1,12 @@
+* Alakazam
+
+Alakazam is my config for Hammerspoon as well as the home of my Spoons. Cloning
+this repo into =~/.hammerspoon/= is enough to get this started. In theory the
+config will bootstrap itself from there, thanks to my =spoonManager= spoon.
+
+The best way to use individual spoons is probably to directly copy
+=spoonManager= into your own Hammerspoon config (or use another spoon management
+tool that can handle git repos), and then from there you'll want to grab the zip
+file releases of my individual spoons that you wish to use.
+
+** TODO add zip releases in GH for individual spoons
