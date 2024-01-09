@@ -6,9 +6,11 @@ M = {
 function M:outlineWindow(window)
    self.currentOutline = hs.canvas.new(
       window:frame()):appendElements({
-         action = "stroke", padding = 4, type = "rectangle",
-         strokeColor = { hex = self.color },
-         strokeWidth = 4,
+         action = "stroke",
+         padding = 4,
+         type = "rectangle",
+         strokeColor = { alpha = 0.25, hex = self.color },
+         strokeWidth = 8,
          strokeJoinStyle = "round",
          withShadow = true
       }):show()
