@@ -5,13 +5,13 @@ reloadConfig = {
 function reloadConfig.reloader(paths)
 	doReload = false
 	for _, file in pairs(paths) do
-		if file:sub(-4) == ".lua" then
-			print("A Lua configuration file has changed. Reloading...")
+		if file:sub(-4) == ".lua" or file:sub(-4) == ".fnl" then
+			print("A Hammerspoon configuration file has changed. Reloading...")
 			doReload = true
 		end
 	end
 	if not doReload then
-		print("No Lua configuration files have changed. Skipping reload...")
+		print("No Hammerspoon configuration files have changed. Skipping reload...")
 		return
 	end
 	hs.reload()
